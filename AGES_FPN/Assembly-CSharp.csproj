@@ -64,6 +64,8 @@
   <ItemGroup>
     <Compile Include="Assets\Scripts\CamMouseLook.cs" />
     <Compile Include="Assets\Scripts\PlayerController.cs" />
+    <None Include="Assets\AssetPacks\Day-Night Skyboxes\readme.txt" />
+    <None Include="Assets\AssetPacks\Day-Night Skyboxes\Textures\Readme for Assigning.txt" />
     <Reference Include="Unity.Timeline.Editor">
       <HintPath>F:/Senior Classwork/AGES/GitHub/AGES/AGES_FPN/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
     </Reference>
