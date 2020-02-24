@@ -3,7 +3,10 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - Treeline
+  - Labyrinthstart
+  - LabyrinthStart
   layers:
   - Default
   - TransparentFX

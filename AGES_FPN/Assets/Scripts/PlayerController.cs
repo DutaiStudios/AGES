@@ -4,8 +4,10 @@ using UnityEngine;
 
 public class PlayerController : MonoBehaviour
 {
+    public int rules;
     public float speed = 10.0f;
     Rigidbody rb;
+    public bool PlayerFail = false;
     public bool isGrounded = true;
 
     public float tempjumptimer = 0;
@@ -14,6 +16,7 @@ public class PlayerController : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        rules = 1;
         rb = GetComponent<Rigidbody>();
         Cursor.lockState = CursorLockMode.Locked;
     }
@@ -53,5 +56,25 @@ public class PlayerController : MonoBehaviour
         }
 
     }
+
+    private void OnTriggerEnter(Collider collision)
+    {
+       if (collision.gameObject.tag == "Treeline")
+        {
+            Endstate();
+        }
+
+       if (collision.gameObject.tag == "LabyrinthStart")
+        {
+            rules = 2;
+        }
+    }
+
+    private void Endstate()
+    {
+        PlayerFail = true;
+    }
+
+
 
 }
