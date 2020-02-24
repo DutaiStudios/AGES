@@ -9,7 +9,7 @@ public class PlayerController : MonoBehaviour
     Rigidbody rb;
     public bool PlayerFail = false;
     public bool isGrounded = true;
-
+    public bool SeenMountain = false;
     public float tempjumptimer = 0;
     //TEMPJUMPTIMER is a placeholder
 
@@ -26,6 +26,7 @@ public class PlayerController : MonoBehaviour
     void Update()
     {
 
+        MountainView();
         float translation = Input.GetAxis("Vertical") * speed;
         float straffe = Input.GetAxis("Horizontal") * speed;
         translation *= Time.deltaTime;
@@ -59,12 +60,12 @@ public class PlayerController : MonoBehaviour
 
     private void OnTriggerEnter(Collider collision)
     {
-       if (collision.gameObject.tag == "Treeline")
+        if (collision.gameObject.tag == "Treeline")
         {
             Endstate();
         }
 
-       if (collision.gameObject.tag == "LabyrinthStart")
+        if (collision.gameObject.tag == "LabyrinthStart")
         {
             rules = 2;
         }

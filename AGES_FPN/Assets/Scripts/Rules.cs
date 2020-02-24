@@ -9,16 +9,18 @@ public class Rules : MonoBehaviour
     [SerializeField] PlayerController pcontroller;
     [SerializeField] GameObject Player;
     [SerializeField] Text rulestext;
-
+    [SerializeField] CamMouseLook maincamera;
     private int Ruleset;
+    private float mountainview = 720;
+    private string m_tostring = "\n\n The mountain has seen you. Your mind feels numb and listless. \n\n";
 
 
     void Update()
     {
-
         FollowRules();
         RuleText();
         Ruleset = pcontroller.rules;
+
         if (pcontroller.PlayerFail == true)
         {
             rulestext.text = "YOU HAVE FAILED. \n You disobeyed a rule.";
@@ -34,8 +36,22 @@ public class Rules : MonoBehaviour
 
         if (Ruleset == 2)
         {
-            rulestext.text = "Newest Rules: \n\n Do not turn Around. \n\n Always go opposite the light. \n\n Rules never go away";
+            rulestext.text = "Newest Rules: \n\n Do not turn Around. \n\n Rules never go away";
         }
+
+        if (maincamera.SeenMountain == true)
+        {
+            rulestext.text = m_tostring + mountainview;
+            mountainview--;
+            if (mountainview <= 0)
+            {
+                maincamera.SeenMountain = false;
+                mountainview = 720;
+                RuleText();
+            }
+        }
+
+       
     }
 
     void FollowRules()
@@ -47,5 +63,8 @@ public class Rules : MonoBehaviour
                 pcontroller.PlayerFail = true;
             }
         }
+
     }
+
+
 }
