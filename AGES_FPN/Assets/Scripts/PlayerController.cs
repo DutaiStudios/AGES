@@ -26,7 +26,6 @@ public class PlayerController : MonoBehaviour
     void Update()
     {
 
-        MountainView();
         float translation = Input.GetAxis("Vertical") * speed;
         float straffe = Input.GetAxis("Horizontal") * speed;
         translation *= Time.deltaTime;
