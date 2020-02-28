@@ -62,13 +62,53 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\AssetPacks\Cartoon SportCar B01\script\brake_light.cs" />
+    <Compile Include="Assets\AssetPacks\Cartoon SportCar B01\script\on_off_light.cs" />
+    <Compile Include="Assets\AssetPacks\Cartoon SportCar B01\script\OpenElement.cs" />
+    <Compile Include="Assets\AssetPacks\Cartoon SportCar B01\Standard Assets\script\AbstractTargetFollower.cs" />
+    <Compile Include="Assets\AssetPacks\Cartoon SportCar B01\Standard Assets\script\AutoCam.cs" />
+    <Compile Include="Assets\AssetPacks\Cartoon SportCar B01\Standard Assets\script\CameraSwitch.cs" />
+    <Compile Include="Assets\AssetPacks\Cartoon SportCar B01\Standard Assets\script\CarAudio.cs" />
+    <Compile Include="Assets\AssetPacks\Cartoon SportCar B01\Standard Assets\script\CarController.cs" />
+    <Compile Include="Assets\AssetPacks\Cartoon SportCar B01\Standard Assets\script\CarUserControl.cs" />
+    <Compile Include="Assets\AssetPacks\Cartoon SportCar B01\Standard Assets\script\CrossPlatformInput\Scripts\AxisTouchButton.cs" />
+    <Compile Include="Assets\AssetPacks\Cartoon SportCar B01\Standard Assets\script\CrossPlatformInput\Scripts\ButtonHandler.cs" />
+    <Compile Include="Assets\AssetPacks\Cartoon SportCar B01\Standard Assets\script\CrossPlatformInput\Scripts\CrossPlatformInputManager.cs" />
+    <Compile Include="Assets\AssetPacks\Cartoon SportCar B01\Standard Assets\script\CrossPlatformInput\Scripts\InputAxisScrollbar.cs" />
+    <Compile Include="Assets\AssetPacks\Cartoon SportCar B01\Standard Assets\script\CrossPlatformInput\Scripts\Joystick.cs" />
+    <Compile Include="Assets\AssetPacks\Cartoon SportCar B01\Standard Assets\script\CrossPlatformInput\Scripts\MobileControlRig.cs" />
+    <Compile Include="Assets\AssetPacks\Cartoon SportCar B01\Standard Assets\script\CrossPlatformInput\Scripts\PlatformSpecific\MobileInput.cs" />
+    <Compile Include="Assets\AssetPacks\Cartoon SportCar B01\Standard Assets\script\CrossPlatformInput\Scripts\PlatformSpecific\StandaloneInput.cs" />
+    <Compile Include="Assets\AssetPacks\Cartoon SportCar B01\Standard Assets\script\CrossPlatformInput\Scripts\TiltInput.cs" />
+    <Compile Include="Assets\AssetPacks\Cartoon SportCar B01\Standard Assets\script\CrossPlatformInput\Scripts\TouchPad.cs" />
+    <Compile Include="Assets\AssetPacks\Cartoon SportCar B01\Standard Assets\script\CrossPlatformInput\Scripts\VirtualInput.cs" />
+    <Compile Include="Assets\AssetPacks\Cartoon SportCar B01\Standard Assets\script\DepthOfField.cs" />
+    <Compile Include="Assets\AssetPacks\Cartoon SportCar B01\Standard Assets\script\FreeLookCam.cs" />
+    <Compile Include="Assets\AssetPacks\Cartoon SportCar B01\Standard Assets\script\PivotBasedCameraRig.cs" />
+    <Compile Include="Assets\AssetPacks\Cartoon SportCar B01\Standard Assets\script\PlatformSpecificContent.cs" />
+    <Compile Include="Assets\AssetPacks\Cartoon SportCar B01\Standard Assets\script\PostEffectsBase.cs" />
+    <Compile Include="Assets\AssetPacks\Cartoon SportCar B01\Standard Assets\script\ProtectCameraFromWallClip.cs" />
+    <Compile Include="Assets\AssetPacks\Cartoon SportCar B01\Standard Assets\script\SimpleActivatorMenu.cs" />
+    <Compile Include="Assets\AssetPacks\Cartoon SportCar B01\Standard Assets\script\SkidTrail.cs" />
+    <Compile Include="Assets\AssetPacks\Cartoon SportCar B01\Standard Assets\script\VignetteAndChromaticAberration.cs" />
+    <Compile Include="Assets\AssetPacks\Cartoon SportCar B01\Standard Assets\script\WheelEffects.cs" />
     <Compile Include="Assets\Scripts\CamMouseLook.cs" />
+    <Compile Include="Assets\Scripts\CarCam.cs" />
+    <Compile Include="Assets\Scripts\CarDest.cs" />
+    <Compile Include="Assets\Scripts\CarMove.cs" />
+    <Compile Include="Assets\Scripts\IntroSeg.cs" />
+    <Compile Include="Assets\Scripts\Music.cs" />
     <Compile Include="Assets\Scripts\PlayerController.cs" />
     <Compile Include="Assets\Scripts\Rules.cs" />
     <None Include="Assets\AssetPacks\Day-Night Skyboxes\readme.txt" />
+    <None Include="Assets\AssetPacks\Cartoon SportCar B01\Standard Assets\divers\DepthOfFieldScatter.shader" />
+    <None Include="Assets\AssetPacks\Cartoon SportCar B01\Standard Assets\divers\DepthOfFieldDX11.shader" />
     <None Include="Assets\AssetPacks\KajamansRoads\FileNamesDescription.txt" />
     <None Include="Assets\AssetPacks\Day-Night Skyboxes\Textures\Readme for Assigning.txt" />
+    <None Include="Assets\AssetPacks\Cartoon SportCar B01\Standard Assets\divers\ChromaticAberrationShader.shader" />
     <None Include="Assets\AssetPacks\KajamansRoads\Free\ReadMe.txt" />
+    <None Include="Assets\AssetPacks\Cartoon SportCar B01\Standard Assets\divers\SeparableBlur.shader" />
+    <None Include="Assets\AssetPacks\Cartoon SportCar B01\Standard Assets\divers\VignettingShader.shader" />
     <Reference Include="Unity.Timeline.Editor">
       <HintPath>F:/Senior Classwork/AGES/GitHub/AGES/AGES_FPN/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
     </Reference>

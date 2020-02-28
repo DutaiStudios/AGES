@@ -10,6 +10,11 @@ public class Rules : MonoBehaviour
     [SerializeField] GameObject Player;
     [SerializeField] Text rulestext;
     [SerializeField] CamMouseLook maincamera;
+    [SerializeField] Text SohoText;
+    [SerializeField] CarDest Car;
+    [SerializeField] GameObject car_tbd;
+    [SerializeField] GameObject newcar;
+    private int sohotalk = 175;
     private int Ruleset;
     private float mountainview = 720;
     private string m_tostring = "\n\n The mountain has seen you. Your mind feels numb and listless. \n\n";
@@ -17,6 +22,8 @@ public class Rules : MonoBehaviour
 
     void Update()
     {
+        sohotalk--;
+        sohoconverse();
         FollowRules();
         RuleText();
         Ruleset = pcontroller.rules;
@@ -65,6 +72,22 @@ public class Rules : MonoBehaviour
         }
 
     }
+
+    void sohoconverse()
+    {
+        if (sohotalk >= 0)
+        {
+            SohoText.text = "I'm surprised it lasted as long as it did. \n\n But you'll need to go on foot from here.";
+        }
+
+
+        if (sohotalk <= 0)
+        {
+            SohoText.text = "";
+        }
+    }
+
+
 
 
 }
